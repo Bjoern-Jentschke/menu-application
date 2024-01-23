@@ -1,6 +1,15 @@
+:root {
+    --background-color: #EAECCC ; 
+    --color-highlight: #CD8D7A;
+    --color-1: #C3E2C2;
+    --color-2: #DBCC95;
+    --font: sans-serif;
+}
+
 body {
     text-align: center;
-    background-color: lightgrey;
+    background-color: var(--background-color);
+    color: var(--color-2); 
 }
 p {
     display: flex;
@@ -8,5 +17,5 @@ p {
 }
 
 .background {
-    background-color: blue;
+    background-color: var(--background-color);
 }
