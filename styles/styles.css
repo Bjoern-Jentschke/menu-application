@@ -1,0 +1,12 @@
+body {
+    text-align: center;
+    background-color: lightgrey;
+}
+p {
+    display: flex;
+    
+}
+
+.background {
+    background-color: blue;
+}
