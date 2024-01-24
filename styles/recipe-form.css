@@ -1,0 +1,9 @@
+.add-recipe-picture {
+    background-color: var(--color-1);
+    border: 2px solid var(--color-2);
+    height: 200px;
+    margin: var(--gap);
+}
+.recipe-title {
+    width: 100%;
+}
