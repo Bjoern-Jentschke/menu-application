@@ -4,48 +4,185 @@
         <link rel="stylesheet" href="/styles/styles.css">
     </head>
     <body class="background">
-        <header>
-            <h1>Snackplan</h1>
-            <h3>KW XX</h3>
+
+
+        <header class="header">
+            <h1 class="header__title">Snackplan</h1>
+            <h2 class="header__subtitle">KW XX</h2>
         </header>
+
+
         <main>
-            <div>
-                <p>Montag</p>
-                <p>Rezept1</p>
-                <input type = "checkbox">
-                <button>Add</button>
-            </div>
-            <div>
-                <p>Dienstag</p>
-                <p>Rezept2</p>
-                <input type = "checkbox">
-                <button>Add</button>
-            </div>
-            <div>
-                <p>Mittwoch</p>
-                <p>Rezept3</p>
-                <input type = "checkbox">
-                <button>Add</button>
-            </div>
-            <div>
-                <p>Donnerstag</p>
-                <p>Rezept4</p>
-                <input type = "checkbox">
-                <button>Add</button>
-            </div>
-            <div>
-                <p>Freitag</p>
-                <p>Rezept5</p>
-                <input type = "checkbox">
-                <button>Add</button>
-            </div>
-            <button onclick="createPlan">CREATE NEW PLAN</button>
-            <button onclick="createList">SEND TO SNACKLIST</button>
-        </main>
-        <footer>
-            <nav>
+
+            <ul class="recipe-list">
                 
-            </nav>
-        </footer>
+                <!-- Monday -->
+                <li class="recipe-list__item">
+                    <input class="recipe-list__item__check" type = "checkbox">
+                        <div class="recipe">
+                            <h3 class="recipe__day">Monday</h3>
+                            <p class="recipe__name">Recipe-Name</p>
+                            <button class="recipe__button-person">
+                                <svg class="recipe__button-person__icon">No. of Persons</svg>
+                            </button>
+                            <button class="recipe__button-person">
+                                <svg class="recipe__button-person__icon">change recipe</svg>
+                            </button>
+                        </div>
+                </li>
+
+                <!-- Tuesday -->
+                <li class="recipe-list__item">
+                    <input class="recipe-list__item__check" type = "checkbox">
+                        <div class="recipe">
+                            <h3 class="recipe__day">Tuesday</h3>
+                            <p class="recipe__name">Recipe-Name</p>
+                            <button class="recipe__button-person">
+                                <svg class="recipe__button-person__icon">No. of Persons</svg>
+                            </button>
+                            <button class="recipe__button-person">
+                                <svg class="recipe__button-person__icon">change recipe</svg>
+                            </button>
+                        </div>
+                </li>
+
+                <!-- Wednesday -->
+                <li class="recipe-list__item">
+                    <input class="recipe-list__item__check" type = "checkbox">
+                        <div class="recipe">
+                            <h3 class="recipe__day">Wednesday</h3>
+                            <p class="recipe__name">Recipe-Name</p>
+                            <button class="recipe__button-person">
+                                <svg class="recipe__button-person__icon">No. of Persons</svg>
+                            </button>
+                            <button class="recipe__button-person">
+                                <svg class="recipe__button-person__icon">change recipe</svg>
+                            </button>
+                        </div>
+                </li>
+
+                <!-- Thursday -->
+                <li class="recipe-list__item">
+                    <input class="recipe-list__item__check" type = "checkbox">
+                        <div class="recipe">
+                            <h3 class="recipe__day">Thursday</h3>
+                            <p class="recipe__name">Recipe-Name</p>
+                            <button class="recipe__button-person">
+                                <svg class="recipe__button-person__icon">No. of Persons</svg>
+                            </button>
+                            <button class="recipe__button-person">
+                                <svg class="recipe__button-person__icon">change recipe</svg>
+                            </button>
+                        </div>
+                </li>
+
+                <!-- Friday -->
+                <li class="recipe-list__item">
+                    <input class="recipe-list__item__check" type = "checkbox">
+                        <div class="recipe">
+                            <h3 class="recipe__day">Friday</h3>
+                            <p class="recipe__name">Recipe-Name</p>
+                            <button class="recipe__button-person">
+                                <svg class="recipe__button-person__icon">No. of Persons</svg>
+                            </button>
+                            <button class="recipe__button-person">
+                                <svg class="recipe__button-person__icon">change recipe</svg>
+                            </button>
+                        </div>
+                </li>
+
+                <!-- Saturday -->
+                <li class="recipe-list__item">
+                    <input class="recipe-list__item__check" type = "checkbox">
+                        <div class="recipe">
+                            <h3 class="recipe__day">Monday</h3>
+                            <p class="recipe__name">Recipe-Name</p>
+                            <button class="recipe__button-person">
+                                <svg class="recipe__button-person__icon">No. of Persons</svg>
+                            </button>
+                            <button class="recipe__button-person">
+                                <svg class="recipe__button-person__icon">change recipe</svg>
+                            </button>
+                        </div>
+                </li>
+
+                <!-- Sunday -->
+                <li class="recipe-list__item">
+                    <input class="recipe-list__item__check" type = "checkbox">
+                        <div class="recipe">
+                            <h3 class="recipe__day">Monday</h3>
+                            <p class="recipe__name">Recipe-Name</p>
+                            <button class="recipe__button-person">
+                                <svg class="recipe__button-person__icon">No. of Persons</svg>
+                            </button>
+                            <button class="recipe__button-person">
+                                <svg class="recipe__button-person__icon">change recipe</svg>
+                            </button>
+                        </div>
+                </li>
+
+            <!-- Create random list & create shopping list button -->
+            <div class="submit">
+                <button class="submit__button-schedule" onclick="createPlan">CREATE NEW PLAN</button>
+                <button class="submit__button-shopping-list" onclick="createList">SEND TO SNACKLIST</button>
+            </div>
+
+        </main>
+
+        <!-- Navbar - Home -->
+        <nav class="navigation">
+            <ul class="navigation__list">
+                <li class="navigation__list-item navigation__list-item--active">
+                    <a class="navigation__link">
+                        <svg></svg>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Navbar - Recipes -->
+        <nav class="navigation">
+            <ul class="navigation__list">
+                <li class="navigation__list-item navigation__list-item--active">
+                    <a class="navigation__link">
+                        <svg></svg>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Navbar - Shopping List -->
+        <nav class="navigation">
+            <ul class="navigation__list">
+                <li class="navigation__list-item navigation__list-item--active">
+                    <a class="navigation__link">
+                        <svg></svg>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Navbar - Favorites -->
+        <nav class="navigation">
+            <ul class="navigation__list">
+                <li class="navigation__list-item navigation__list-item--active">
+                    <a class="navigation__link">
+                        <svg></svg>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Navbar - Profile -->
+        <nav class="navigation">
+            <ul class="navigation__list">
+                <li class="navigation__list-item navigation__list-item--active">
+                    <a class="navigation__link">
+                        <svg></svg>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+       
     </body>
 </html>    
