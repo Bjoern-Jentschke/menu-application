@@ -63,3 +63,6 @@
 .button-add-ingredient {
     width: 40px
 }
+.head {
+    display: flex; 
+}
