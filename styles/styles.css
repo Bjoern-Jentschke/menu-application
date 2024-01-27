@@ -1,3 +1,5 @@
+@import url(.navigation);
+
 body {
     text-align: center;
     background-color: lightgrey;
@@ -9,4 +11,4 @@ p {
 
 .background {
     background-color: seagreen;
-}
+
