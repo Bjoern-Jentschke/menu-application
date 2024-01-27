@@ -18,7 +18,13 @@ body {
     position: relative;
     margin: 0; 
 }
+<<<<<<< HEAD
 
+=======
+input {
+    border: 1px solid var(--color-2);
+}
+>>>>>>> feature1
 p {
     display: flex;
 }
@@ -36,3 +42,15 @@ p {
     bottom: 0;
     left:10px;
 }
+<<<<<<< HEAD
+=======
+
+button {
+    background-color: var(--color-2);
+    border: 2px solid var(--color-highlight);
+    border-radius: 10px;
+}
+dsfjkldfj  {
+    sdfkdsfl
+}
+>>>>>>> feature1
