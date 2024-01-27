@@ -18,7 +18,9 @@ body {
     position: relative;
     margin: 0; 
 }
-
+input {
+    border: 1px solid var(--color-2);
+}
 p {
     display: flex;
 }
@@ -35,4 +37,10 @@ p {
     position: fixed;
     bottom: 0;
     left:10px;
+}
+
+button {
+    background-color: var(--color-2);
+    border: 2px solid var(--color-highlight);
+    border-radius: 10px;
 }

@@ -4,21 +4,24 @@
         <link rel="stylesheet" href="/styles/styles.css">
         <script src="./js/index.js" defer></script>
     </head>
-    <body>
-        <a class="close-button">x</a>
-        <form>
+    <body class="form-body">
+        <a class="close-button">svg?X</a>
+        <form class="recipe-form">
             <div class="add-recipe-picture"> 
-                <button>add Picture?</button>
+                <button class="add-recipe-picture-button">add Picture?svg?</button>
             </div>    
-            <input class="recipe-title" placeholder="Titel"/>
-            <section class="zutat-row">
-                <input class="checkbox" />
-                <input class="zutat" placeholder="Zutat"/>
-            </section>
-             <section class="zutat-row">
-                <input class="checkbox" />
-                <input class="zutat" placeholder="Zutat"/>
-            </section>
+            <input class="recipe-title" placeholder="Titel" required/>
+            <ul data-js="add-ingredient" class="ingredient-list">
+                <section class="ingredient-row">
+                    <input class="checkbox" placeholder="Einheit?"/>
+                    <input class="ingredient" placeholder="Zutat"/>
+                </section>
+                <section class="ingredient-row">
+                    <input class="checkbox" />
+                    <input class="ingredient" placeholder="Zutat"/>
+                </section>
+            </ul>
+            <button class="button-add-ingredient">plus Zutat, svg</button>
             <input class="recipe-text" placeholder="Zubereitung"/>
             <button>save</button>
         </form>
