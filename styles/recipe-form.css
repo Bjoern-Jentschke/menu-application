@@ -61,7 +61,7 @@
 
 .navigation {
     display: flex;
-
-.head {
-    display: flex; 
+}
+.button-save {
+    margin-top:1rem;
 }
